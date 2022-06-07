@@ -32,10 +32,29 @@
 </tr>
 </table>
 </div><!------menu div ends here--->
+  <div id="menuopen"></div>
+<div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
 
 <div id="mainslide"><!------mainslide div starts here--->
 <img id="back" src="background.jpg" />
 </div><!------mainslide div ends here--->
 
 </body>
+  <script>
+function menuopen()
+{
+document.getElementById("menuopen").innerHTML="<table id='menutab'><tr><th id='openmenu'>Home</th></tr><tr><th id='openmenu'>About Us</th></tr><tr><th id='openmenu'>Office Beares</th></tr><tr><th id='openmenu'>Kalamela-2022</th></tr><tr><th id='openmenu'>Membership</th></tr><tr><th id='openmenu'>Puraskaram</th></tr><tr><th id='openmenu'>Events</th></tr><tr><th id='openmenu'>Gallery</th></tr><tr><th id='openmenu'>Contact Us</th></tr></table>";
+}
+
+
+var i=0;
+var n=6;
+var txt="";
+for(i=0;i<n;i++)
+{txt=txt+"<div id='pt'><img id='im' src='photo"+i+".jpg'></div>";}
+
+document.getElementById("phot").innerHTML=txt;
+
+
+</script>
 </html>
