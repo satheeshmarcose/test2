@@ -7,7 +7,8 @@ body{margin:0px;width:100%}
 #menu{width:100%;height:40px;background-color:#e9e9e9;overflow:hidden}
 #men{padding-left:25px;padding-right:25px;padding-top:10px;padding-bottom:10px;font-family:inter;cursor:pointer}
 #men:hover{background-color:#8ae8ff;color:white}
-
+#menuopen{width:0px;height:0px;overflow:hidden}
+#menuicon{width:0px;height:0px;overflow:hidden;position:absolute;}
 
 
 
@@ -15,19 +16,58 @@ body{margin:0px;width:100%}
 {
 body{margin:0px;width:350px}
   #menu{width:0px;height:0px;overflow:hidden;}
+  #menuicon{width:70px;height:70px;overflow:hidden;position:absolute;margin-top:100px;margin-left:0%;z-index:900}
+  #menuopen{width:350px;height:auto;overflow:hidden}
+  #openmenu{width:100%;text-align:center;font-size:30px;color:white;background-color:rgba(0,0,0,0.8);font-family:inter;padding-top:15px;padding-bottom:15px}
+  
 
 
 
 }
+ @font-face {
+  font-family: Gayathri;
+  src: url(Gayathri Regular.ttf);
+}
+ @font-face {
+  font-family: inter;
+  src: url(Inter-VariableFont_slnt,wght.ttf);
+}  
+  
 </style>
 </head>
 <body>
 <div id="header"><img src="CMA_LOGO.jpg"></div>
+  <div id="menuopen"></div>
+<div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
 <div id="menu"><!------menu div starts here--->
 <table style="margin-left:auto;margin-right:auto">
 <tr>
 <th id="men">Home</th><th id="men">About Us<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Office Beares<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Kalamela-2022<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Membership<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Puraskaram<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Events</th><th id="men">Gallery<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Contact Us</th>
 </tr>
 </table>
+</div>  <!------menu div ends here--->
+  
+  
+  
+  
+ <script>
+function menuopen()
+{
+document.getElementById("menuopen").innerHTML="<table id='menutab'><tr><th id='openmenu'>Home</th></tr><tr><th id='openmenu'>About Us</th></tr><tr><th id='openmenu'>Office Beares</th></tr><tr><th id='openmenu'>Kalamela-2022</th></tr><tr><th id='openmenu'>Membership</th></tr><tr><th id='openmenu'>Puraskaram</th></tr><tr><th id='openmenu'>Events</th></tr><tr><th id='openmenu'>Gallery</th></tr><tr><th id='openmenu'>Contact Us</th></tr></table>";
+}
+
+
+var i=0;
+var n=6;
+var txt="";
+for(i=0;i<n;i++)
+{txt=txt+"<div id='pt'><img id='im' src='photo"+i+".jpg'></div>";}
+
+document.getElementById("phot").innerHTML=txt;
+
+
+</script> 
+  
+  
 </body>
 </html>
