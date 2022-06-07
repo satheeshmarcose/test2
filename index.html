@@ -1,7 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body{margin:0px}
+#men{padding-left:25px;padding-right:25px;padding-top:10px;padding-bottom:10px;font-family:inter;cursor:pointer}
+#men:hover{background-color:#8ae8ff;color:white}
+#menu{background-color:#d8d8d8;}
+#headimg{max-width:600px}
+  #mainslide{width:100%}
+  #header{width:100%}
+  #back{width:100%}
+
+@media (max-width: 800px)
+{
+#menu{width:0px;height:0px;overflow:hidden}
+#back{width:600px}
+#headimg{width:600px}
+   #mainslide{width:600px}
+  #header{width:600px}
+
+}
+</style>
 </head>
 <body>
+<div id="header"><img id="headimg" style="max-width:600px" src="CMA_LOGO.jpg"></div>
+<div id="menu"><!------menu div starts here--->
+<table id="mentab" style="margin-left:auto;margin-right:auto">
+<tr>
+<th id="men">Home</th><th id="men">About Us<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Office Beares<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Kalamela-2022<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Membership<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Puraskaram<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Events</th><th id="men">Gallery<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Contact Us</th>
+</tr>
+</table>
+</div><!------menu div ends here--->
+
+<div id="mainslide"><!------mainslide div starts here--->
+<img id="back" src="background.jpg" />
+</div><!------mainslide div ends here--->
+
 </body>
 </html>
