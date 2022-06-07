@@ -16,9 +16,32 @@
   #pt{display:inline-block;padding:5px;overflow:hidden;}
 #pt:hover{transform:scale(1.1,1.1);transition:.5s}
 #im{max-width:150px}
-  #pres{display:flex;height:auto;flex-direction:row;margin-left:25px;margin-right:25px}
+	#a{position:absolute;animation-name:slide1}
+	#b{position:absolute;animation-name:slide3}
+	#c{position:absolute;animation-name:slide2}
+	#pres{display:flex;height:auto;flex-direction:row;margin-left:25px;margin-right:25px}
   body{margin:0px}
-  #menuopen{width:0px;height:0px;overflow:hidden}
+ 
+	@keyframes slide1 {
+  0%{opacity:0}
+  20%{opacity:0}
+  40%{opacity:1}
+  100%{opacity:1}
+}
+@keyframes slide2 {
+  0%{opacity:0}
+  40%{opacity:0}
+  60%{opacity:1}
+  100%{opacity:1}
+}
+
+@keyframes slide3 {
+  0%{opacity:0}
+  60%{opacity:0}
+  80%{opacity:1}
+  100%{opacity:1}
+}
+	#menuopen{width:0px;height:0px;overflow:hidden}
 #menuicon{width:0px;height:0px;overflow:hidden;position:absolute;}
 #men{padding-left:25px;padding-right:25px;padding-top:10px;padding-bottom:10px;font-family:inter;cursor:pointer}
 #men:hover{background-color:#8ae8ff;color:white}
@@ -69,6 +92,9 @@
 </style>
 </head>
 <body>
+	<div id="a"><img src="chi.png"></div>
+	<div id="b"><img src="background1.png"></div>
+	<div id="c"><img src="date.png"></div>
 <div id="header"><img id="headimg" style="max-width:600px" src="CMA_LOGO.jpg"></div>
 <div id="menu"><!------menu div starts here--->
 <table id="mentab" style="margin-left:auto;margin-right:auto">
