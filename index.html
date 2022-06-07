@@ -6,18 +6,19 @@
 #men{padding-left:25px;padding-right:25px;padding-top:10px;padding-bottom:10px;font-family:inter;cursor:pointer}
 #men:hover{background-color:#8ae8ff;color:white}
 #menu{background-color:#d8d8d8;}
+#headimg{max-width:600px}
 
 @media (max-width: 800px)
 {
 #menu{width:0px;height:0px;overflow:hidden}
-#mainslide{max-width:600px}
-
+#back{max-width:600px}
+#headimg{max-width:600px}
 
 }
 </style>
 </head>
 <body>
-<div id="header"><img style="max-width:600px" src="CMA_LOGO.jpg"></div>
+<div id="header"><img id="headimg" style="max-width:600px" src="CMA_LOGO.jpg"></div>
 <div id="menu"><!------menu div starts here--->
 <table id="mentab" style="margin-left:auto;margin-right:auto">
 <tr>
@@ -27,7 +28,7 @@
 </div><!------menu div ends here--->
 
 <div id="mainslide"><!------mainslide div starts here--->
-<img src="background.jpg" style="width:100%">
+<img id="back" src="background.jpg" style="width:100%">
 </div><!------mainslide div ends here--->
 
 </body>
