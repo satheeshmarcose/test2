@@ -21,6 +21,9 @@
 
 @media (max-width: 800px)
 {#teamin{display:inline-block;padding:10px}
+	#menutab{position:absolute;width:100%;margin-top:0px;padding:2%;overflow:hidden;z-index:1000;background-color:grey;}
+#openmenu{width:100%;text-align:center;font-size:30px;color:white;background-color:rgba(0,0,0,0.8);font-family:inter;padding-top:15px;padding-bottom:15px}
+  #menuicon{width:70px;height:70px;overflow:hidden;position:absolute;margin-top:100px;margin-left:10px;z-index:900}
 	
 	#team{padding:10px;margin-top:10px}
 	#body{width:350px}
@@ -49,6 +52,8 @@
 </style>
 </head>
 <body>
+<div id="menuopen"></div>
+<div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
 <div id="header"><img id="headimg" style="max-width:600px" src="CMA_LOGO.jpg"></div>
 <div id="menu"><!------menu div starts here--->
 <table id="mentab" style="margin-left:auto;margin-right:auto">
