@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{margin:0px;}
-  #header{width:100%;height:auto}
+  #main{width:100%}
 #menu{width:100%;height:40px;background-color:#e9e9e9;overflow:hidden}
 #men{padding-left:25px;padding-right:25px;padding-top:10px;padding-bottom:10px;font-family:inter;cursor:pointer}
 #men:hover{background-color:#8ae8ff;color:white}
@@ -17,7 +17,7 @@ body{margin:0px;}
 @media (max-width: 800px)
 {
 body{width:350px;}
-  #header{width:350px;height:auto}
+  #main{width:350px}
   #menu{width:0px;height:0px;overflow:hidden;}
   #menuicon{width:70px;height:70px;position:absolute;margin-top:70px;margin-left:10px;z-index:900;}
   #menuopen{width:350px;height:auto;overflow:hidden;}
@@ -41,7 +41,7 @@ body{width:350px;}
 <body>
     <div id="menuopen"></div>
 <div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
-<div id="header"><img src="CMA_LOGO.jpg" style="width:100%"></div>
+<div id="header"><img id="main" src="CMA_LOGO.jpg" ></div>
 
 <div id="menu"><!------menu div starts here--->
 <table style="margin-left:auto;margin-right:auto">
