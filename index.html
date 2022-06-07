@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{margin:0px;}
+#bot{width:160px;height:100px;background-color:#1a2758;margin-top:-5px;padding-top:0px}
+#teamin{display:inline-block;padding:10px}
+#chic{position:absolute;text-align:center;font-family:inter;font-size:50px;margin-top:-420px;width:100%;animation-name:slide1;animation-duration:8s}
+#date{position:absolute;text-align:center;font-family:inter;font-size:50px;margin-top:-260px;width:100%;animation-name:slide2;animation-duration:8s}
+#kala{position:absolute;text-align:center;font-family:inter;font-size:50px;margin-top:-360px;width:100%;animation-name:slide3;animation-duration:8s}
+#menuopen{width:0px;height:0px;overflow:hidden}
+#menuicon{width:0px;height:0px;overflow:hidden;position:absolute;}
+#team{width:90%;background-color:#e3e3e3;height:auto;padding-top:40px;padding-bottom:40px;padding-left:10%;}
+#phot{overflow:hidden}
+#pt{display:inline-block;padding:5px;overflow:hidden;}
+#pt:hover{transform:scale(1.1,1.1);transition:.5s}
+#im{max-width:150px}
+#im2{max-width:180px}
+#pt2{display:inline-block;padding:5px;overflow:hidden;}
+#men{padding-left:25px;padding-right:25px;padding-top:10px;padding-bottom:10px;font-family:inter;cursor:pointer}
+#men:hover{background-color:#8ae8ff;color:white}
+#header{width:100%;height:90px;}
+#menu{width:100%;height:40px;background-color:#e9e9e9;overflow:hidden}
+#mainslide{width:100%;height:auto;overflow:hidden}
+#welcome{width:90%;height:auto;padding-left:5%;padding-right:5%;color:black}
+#pres{display:flex;height:auto;flex-direction:row;margin:5%}
+#media{display:flex;height:400px;flex-direction:row;margin-left:50px;margin-right:50px}
+@media (max-width: 800px)
+ {#menutab{position:absolute;width:100%;margin-top:0px;padding:2%;overflow:hidden;z-index:1000;background-color:grey;}
+#openmenu{width:100%;text-align:center;font-size:30px;color:white;background-color:rgba(0,0,0,0.8);font-family:inter;padding-top:15px;padding-bottom:15px}
+  #menuicon{width:70px;height:70px;overflow:hidden;position:absolute;margin-top:100px;margin-left:0%;z-index:900}
+  #team{margin-top:480px;width:100%}  
+  #menu{height:0px;width:0px}
+  #header{transform:scale(0.8,0.8)}
+  #kalai{transform:scale(.5 ,.5);margin-top:160px;margin-left:-17%}
+  #datei{transform:scale(.5 ,.5);margin-top:130px;margin-left:0%}
+  #chici{transform:scale(.5 ,.5);margin-top:200px;margin-left:-5%}
+  #pres {
+    flex-direction: column;
+    height:auto;
+  }
+  #media{
+    flex-direction: column;
+    height:800px
+	margin-left:5px;
+	margin-right:5px;
+  } 
+ }
+ 
+ @font-face {
+  font-family: Gayathri;
+  src: url(Gayathri Regular.ttf);
+}
+ @font-face {
+  font-family: inter;
+  src: url(Inter-VariableFont_slnt,wght.ttf);
+}
+
+
+
+@keyframes slide1 {
+  0%{opacity:0}
+  20%{opacity:0}
+  40%{opacity:1}
+  100%{opacity:1}
+}
+@keyframes slide2 {
+  0%{opacity:0}
+  40%{opacity:0}
+  60%{opacity:1}
+  100%{opacity:1}
+}
+
+@keyframes slide3 {
+  0%{opacity:0}
+  60%{opacity:0}
+  80%{opacity:1}
+  100%{opacity:1}
+}
+
+@keyframes slide5 {
+  0%{opacity:0}
+  90%{opacity:0}
+  100%{opacity:1}
+}
+
+</style>
+</head>
+<body>
+<div id="menuopen"></div>
+<div id="menuicon" onclick="menuopen()"><img id="menupng" src="menu.png"></div>
+<div id="header"><img src="CMA_LOGO.jpg"></div>
+<div id="menu"><!------menu div starts here--->
+<table style="margin-left:auto;margin-right:auto">
+<tr>
+<th id="men">Home</th><th id="men">About Us<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Office Beares<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Kalamela-2022<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Membership<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Puraskaram<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Events</th><th id="men">Gallery<img src="downarrow.png" style="width:11px;margin-left:5px"></th><th id="men">Contact Us</th>
+</tr>
+</table>
+
+
+</div><!------menu div ends here--->
+<div id="mainslide"><!------mainslide div starts here--->
+<img src="background.jpg" style="width:100%">
+<div id="chic"><img id="chici" src="chi.png"></div>
+<div id="kala"><img id="kalai"  src="background1.png"></div>
+<div id="date"><img id="datei" src="date.png"></div>
+</div><!------mainslide div ends here--->
+<div id="welcome"><!------welcome div starts here--->
+<div style="font-family:inter;font-size:40px;text-align:center;font-weight:bold;color:#1b297d;border-bottom:4px solid #68d6ff;padding-bottom:10px;"><br>Welcome to Chicago Malayalee Association (CMA)</div>
+<div style="font-family:inter;"><br>The Chicago Malayalee Association, established in 1972, is the oldest and largest Malayalee association in North America. It is a registered, non-profit, socio – cultural organization in the State of Illinois, and has almost 2500 registered members now.<br><br>
+
+The purpose of this Association is to promote social, cultural, charitable, educational, and literary activities among the Malayalees of Metropolitan Chicago area, all over Illinois and the Midwest region. The Chicago Malayalee Association organizes co-operative and charitable activities in the general interest and well-being of the members of the association as and when required, and coordinates such activities with other communities.</div>
+
+
+</div><!------welcome div ends here--->
+<div id="pres"><!------pres div starts here--->
+<div style="flex:20%;height:500px;background-color:#20208f;"><img src="JoshyVallikalamPresident.jpg" style="margin:20px"></div>
+<div style="flex:50%;height:500px;background-color:#e9e9e9">
+<div style="font-family:inter;font-size:40px;text-align:center;padding-left:10px;padding-right:10px;padding-bottom:30px;font-weight:bold;color:#1b297d;"><br>Presidents Message</div>
+<div style="font-family:Gayathri;padding-left:40px;padding-right:40px;">പ്രിയമുള്ളവരേ,
+
+നിങ്ങൾക്ക് ഏവർക്കും ചിക്കാഗോ മലയാളി അസോസ്സിയേഷൻറെ നന്മകൾ നേരുന്നു. നമ്മുടെ ഈ സംഘടന പതിറ്റാണ്ടുകൾ പൂർത്തിയാക്കി ഗോൾഡൻ ജൂബിലിയുടെ അരികിൽ എത്തിനില്ക്കുന്നു എന്ന് പറയുമ്പോൾ അതിയായ ചാരിദാർത്ഥ്യം ഉണ്ട്.
+
+ഷിക്കാഗോ മലയാളി അസ്സോസിയേഷന് ഇന്ന് പരമ്പര്യം കൊണ്ടും പ്രവര്ത്തനം കൊണ്ടും അമേരിക്കയിലെ ഏറ്റവും വലിയ സംഘടനയാണ്. അസ്സോസ്സിയേഷന്റെ ചരിത്രം ഷിക്കാഗോയിലെ മലയാളികളുടെ കുടിയേറ്റ ചരിത്രവുമായി ബന്ധപ്പെട്ടു കിടക്കുന്നു. മലയാളികള് ഷിക്കാഗോയില് കുടിയേറിത്തുടങ്ങിയ കാലഘട്ടത്തില് തന്നെ ഏകദേശം 150-ഓളം വരുന്ന മലയാളികളെ പങ്കെടുപ്പിച്ചുകൊണ്ടാണ് 1972-ല് ഷിക്കാഗോ മലയാളികളുടെ മാര്ഗ്ഗദീപമായി സാംസ്കാരിക സംഘടന എന്ന നിലയില് ഈ അസ്സോസ്സിയേഷന് രൂപം കൊണ്ടത്.<br><br></div>
+
+
+</div>
+<div style="flex:30%;height:500px;">
+<div style="font-family:inter;font-size:30px;text-align:center;font-weight:bold;background-color:#fff6a6;height:500px;color:#1b297d;margin-left:10px;margin-right:10px"><br>Upcoming Events</div>
+
+</div>
+</div><!----- press div enfs here----->
+
+<div id="media"><!------media div starts here--->
+<div style="flex:50%;height:500px;">
+<div style="font-family:arial;font-size:40px;text-align:center;padding:10px;font-weight:bold;">Latest Event Photos<div id="phot"></div></div>
+<div style="width:90%;height:70%;margin:5%;"></div>
+</div>
+<div style="flex:50%;height:500px;">
+<div style="font-family:arial;font-size:40px;text-align:center;padding:10px;font-weight:bold">Latest Videos<div><iframe width=100% height="315" src="https://www.youtube.com/embed/a2YhwwnlRgI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
+
+</div>
+</div><!------media div ends here--->
+
+
+<div id="team"><!------team div starts here--->
+<div id="teamin"><img id="teai" src="0.jpg" style="width:160px"><div id="bot"></div></div>
+<div id="teamin"><img id="teai" src="1.jpg" style="width:160px"><div id="bot"></div></div>
+<div id="teamin"><img id="teai" src="2.jpg" style="width:160px"><div id="bot"></div></div>
+<div id="teamin"><img id="teai" src="3.jpg" style="width:160px"><div id="bot"></div></div>
+<div id="teamin"><img id="teai" src="4.jpg" style="width:160px"><div id="bot"></div></div>
+<div id="teamin"><img id="teai" src="5.jpg" style="width:160px"><div id="bot"></div></div>
+
+</div><!------team div ends here--->
+
+<script>
+function menuopen()
+{
+document.getElementById("menuopen").innerHTML="<table id='menutab'><tr><th id='openmenu'>Home</th></tr><tr><th id='openmenu'>About Us</th></tr><tr><th id='openmenu'>Office Beares</th></tr><tr><th id='openmenu'>Kalamela-2022</th></tr><tr><th id='openmenu'>Membership</th></tr><tr><th id='openmenu'>Puraskaram</th></tr><tr><th id='openmenu'>Events</th></tr><tr><th id='openmenu'>Gallery</th></tr><tr><th id='openmenu'>Contact Us</th></tr></table>";
+}
+
+
+var i=0;
+var n=6;
+var txt="";
+for(i=0;i<n;i++)
+{txt=txt+"<div id='pt'><img id='im' src='photo"+i+".jpg'></div>";}
+
+document.getElementById("phot").innerHTML=txt;
+
+
+</script>
+
+</body>
+</html>
